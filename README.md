@@ -14,14 +14,10 @@ go expression evaluator is a basic math expression parser and evaluator.
 
 ## Basic usage
 
-  const PARSER_STACK_SIZE = 100
+    const PARSER_STACK_SIZE = 100
 
-  result, err := expreval.Eval("2+(3+4)*(4-8)", stackSize)
-
-  if err != nil {
-
-    ...
-
-  }
-
-  fmt.Printf("%v", result)
+    result, err := expreval.Eval("2+(3+4)*(4-8)", stackSize)
+    if err != nil {
+        ...
+    }
+    fmt.Printf("%v", result)
